@@ -262,6 +262,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { apiService } from '@/lib/api';
 import { authUtils } from '@/utils/auth';
+import connectDB from "@/lib/mongodb";
+
 
 export default function SignupPage() {
   const [passwordVisible, setPasswordVisible] = useState(false);
